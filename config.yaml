@@ -23,3 +23,7 @@ params:
     - item: skills
       panel_id: skill-panel
     - item: hobbies
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
