@@ -39,7 +39,10 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install Tailwind CSS # I have added this section
-        run: npm install -g tailwindcss    # I have added this section
+        run: |
+          npm init -y
+          npm install -D tailwindcss
+          echo "$(pwd)/node_modules/.bin" >> $GITHUB_PATH
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
