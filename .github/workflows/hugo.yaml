@@ -86,7 +86,6 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
         run: |
-          #Add the local node_modules to the path so npx finds tailwindcss immediately
           export PATH=$PATH:$(pwd)/node_modules/.bin"
           hugo \
             --gc \
