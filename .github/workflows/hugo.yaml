@@ -38,6 +38,8 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: ${{ env.NODE_VERSION }}
+      - name: Install Tailwind CSS # I have added this section
+        run: npm install -g tailwindcss    # I have added this section
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
