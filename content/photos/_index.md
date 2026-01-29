@@ -7,16 +7,17 @@ layout = "single"
 
 Welcome to my visual lab notebook!
 
-![Lab Setup](/images/IMG_0398.jpeg)
+### Lab & Hardware Gallery
 
-![Networking Gear](/images/IMG_1005.JPG)
+| | |
+|:---:|:---:|
+![Dell XFR E6420](/images/IMG_1005.JPG) <br> **Dell XFR E6420 Top** | ![Rack Equipment](/images/IMG_1006.JPG) <br> **Dell XFR E6420 Open**
+![M.2 Enclosure](/images/IMG_0412.jpeg) <br> **M.2 Enclosure Top** | ![Lab Component](/images/IMG_0413.jpeg) <br> **M.2 Enclosure Bottom** 
 
-![Hardware Detail](/images/IMG_0412.jpeg)
 
-![Lab Component](/images/IMG_0413.jpeg)
 
-![Rack Equipment](/images/IMG_1006.JPG)
+![Workstation](/images/IMG_1189.JPG) <br> **The Desk** 
 
-![Workstation](/images/IMG_1189.JPG)
+![Cabling](/images/IMG_1614.JPG) <br> **Desk Chanegs**
 
-![Cabling](/images/IMG_1614.JPG)
+![Raspberry Pi 4](/images/IMG_0398.jpeg) <br> **Raspberry PI 4**
