@@ -25,11 +25,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm' # This speeds up future builds
 
-      - name: Install Tailwind CSS CLI
-        # Hugo v0.128+ falls back to the PATH if npx fails
-        # We install the CLI globally so 'tailwindcss' is always found
-        run: npm install -g tailwindcss @tailwindcss/cli
+      - name: Install Tailwind Dependencies
+        # We install locally so Hugo can find it in the project root
+        run: |
+          npm init -y
+          npm install -D tailwindcss @tailwindcss/cli
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -38,7 +40,10 @@ jobs:
           extended: true
 
       - name: Build site
-        run: hugo --minify
+        # We use npx to ensure the local tailwindcss is found
+        run: |
+          npx tailwindcss --version
+          hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
