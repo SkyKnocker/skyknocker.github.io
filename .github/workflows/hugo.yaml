@@ -26,8 +26,9 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Tailwind CSS
-        run: npm install -D tailwindcss
+      - name: Install Tailwind CSS CLI
+        # Hugo looks for 'tailwindcss' via npx or PATH
+        run: npm install -g tailwindcss @tailwindcss/cli
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
