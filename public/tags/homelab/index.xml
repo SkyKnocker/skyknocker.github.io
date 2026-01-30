@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homelab on aafu theme</title>
+    <link>//localhost:1313/tags/homelab/</link>
+    <description>Recent content in Homelab on aafu theme</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Lab Setup</title>
+      <link>//localhost:1313/blog/cybersecurity_portfolio/blog-post/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/cybersecurity_portfolio/blog-post/</guid>
+      <description>&lt;p&gt;This is my very first Blog to make sure the link I have works properly.&#xA;testing&lt;/p&gt;&#xA;&lt;p&gt;testing&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
