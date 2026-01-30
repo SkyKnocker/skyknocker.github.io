@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto  dark "><head>
+	<meta name="generator" content="Hugo 0.155.0">
+  
+  <title>aafu theme</title>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta name="theme-color" content="" />
+  <meta name="description" content="Website title" />
+  <meta name="author" content="Darshan Baral" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/main.min.71dd1d53f6b005025e3589985a4a07ea981a0ef920c18108d1e6aaf5504c951d.css"
+    integrity="sha256-cd0dU/awBQJeNYmYWkoH6pgaDvkgwYEI0eaq9VBMlR0="
+    crossorigin="anonymous"
+  />
+   
+
+  <style>
+     
+    html {
+      touch-action: manipulation;
+      scroll-behavior: smooth;
+    }
+
+    .panel {
+      max-height: 0;
+      transition: 0.3s ease-out;
+    }
+
+    .profile-photo-container {
+      img {
+        max-width: 100%;
+      }
+    }
+     
+    .pagefind-ui__search-input {
+      color: black;
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 0.25em;
+      border: 1px solid gray;
+    }
+    .pagefind-ui__search-clear {
+      display: none;
+    }
+    .dark .pagefind-ui__search-input {
+      color: white;
+      background-color: #322d2d;
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 0.25em;
+      border: 1px solid gray;
+    }
+    .dark .pagefind-ui__search-input::placeholder {
+      color: #8f8f8f;
+    }
+    .chevron {
+      transition: 300ms linear rotate;
+    }
+    .active > .chevron {
+      transform: rotate(90deg);
+    }
+  </style>
+
+  <script>
+    const expandAccordion = (elem) => {
+      const allPanels = Array.from(document.querySelectorAll(".panel"));
+      const allAccordion = Array.from(document.querySelectorAll(".accordion"));
+
+      if (!elem.parentElement.classList.contains("active")) {
+        allAccordion.forEach((acc) => {
+          acc.classList.remove("active");
+        });
+        elem.parentElement.classList.add("active");
+        allPanels.forEach(function (elem) {
+          elem.style.maxHeight = null;
+        });
+        let activePanel = elem.parentElement.nextElementSibling;
+        if (
+          activePanel.id != "skill-panel" &&
+          document.querySelector("#skill-panel")
+        ) {
+          let skillBars = Array.from(
+            document.querySelectorAll("#skill-percent")
+          );
+          skillBars.forEach((elem) => {
+            elem.style.width = "0";
+          });
+        }
+        activePanel.style.maxHeight = activePanel.scrollHeight + "px";
+      }
+    };
+  </script>
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+
+    const setTheme = (theme) => {
+      html.classList.remove("light");
+      if (theme === "dark") {
+        html.classList.add("dark");
+        window.localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        window.localStorage.setItem("theme", "light");
+      }
+      fixThemeToggleIcon(theme);
+    };
+
+    const fixThemeToggleIcon = (theme) => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (themeToggle) {
+        if (theme === "dark") {
+          themeToggle.classList.remove("bi-moon");
+          themeToggle.classList.add("bi-brightness-high");
+        } else {
+          themeToggle.classList.remove("bi-brightness-high");
+          themeToggle.classList.add("bi-moon");
+        }
+      }
+    };
+
+    if (theme == null) {
+      if (html.classList.contains("dark")) {
+        theme = "dark";
+      } else if (html.classList.contains("light")) {
+        theme = "light";
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        if (prefersDark) {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+      }
+    }
+
+    setTheme(theme);
+
+    const toggleTheme = () => {
+      html.classList.contains("dark") ? setTheme("light") : setTheme("dark");
+    };
+
+    window.onload = () => {
+      fixThemeToggleIcon(theme);
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 dark:border-gray-300 justify-between"
+>
+  <div>
+    <a class="nav-menu-item" href="https://skyknocker.github.io/">Home</a>
+    <a class="nav-menu-item" href="/blog">Blog</a>
+    <a class="nav-menu-item" href="/photos">Photos</a>
+    <a class="nav-menu-item" href="/certifications">Certifications</a>
+  </div>
+  <div>
+    <a class="mr-4" href="/search">
+      <i class="bi bi-search"></i>
+    </a>
+    <i
+      class="bi bi-brightness-high theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+      onclick="toggleTheme()"
+    ></i>
+  </div>
+</header>
+
+
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker drop-shadow-md p-2 rounded-t-lg">
+      <div class="flex flex-col justify-center">
+        <div
+  class="w-full p-2 flex justify-center align-middle profile-photo-container"
+>
+  <img
+    class="rounded-sm"
+    src="/images/Chris2.png"
+    alt="Chris Stevens"
+  />
+</div>
+
+        <div class="px-2 text-center"><h1 class="mb-0">Chris Stevens</h1>
+<h4 class="mb-0">SkyKnocker</h4>
+<h3 class="mb-0">cstevens84@gmail.com</h3>
+<h3 class="mb-0">308-455-7959</h3>
+<h3 class="mb-4">Clarksville, TN</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.linkedin.com/in/christopher-stevens-a880b92a4">
+      <i class="mt-1 bi bi-linkedin"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://github.com/SkyKnocker">
+      <i class="mt-1 bi bi-github"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://academy.hackthebox.com/dashboard">
+      <i class="mt-1 bi bi-box"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.roadmap.sh/cyber-security">
+      <i class="mt-1 bi bi-r-square-fill"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://stackoverflow.com/users/15393163/skyknocker">
+      <i class="mt-1 bi bi-stack-overflow"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://app.cybrary.it/">
+      <i class="mt-1 bi bi-shield-check"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="mailto:cstevens84@gmail.com">
+      <i class="mt-1 bi bi-envelope-at"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="/Stevens_Resume_2025_Portfolio.pdf">
+      <i class="mt-1 bi bi-file-earmark-pdf"></i>
+    </a>
+  </div>
+  
+</div>
+</div>
+      </div>
+    </div>
+    <footer class="text-sm text-center border-t border-gray-500  bg-gray-200 dark:bg-dark rounded-b-lg py-2 ">
+  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+
+  
+</footer>
+
+  </div>
+  <div class="col-span-3 relative">
+    
+    
+    <div class="px-2">
+      <h2 class="accordion active">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-person"></i>
+          About Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        
+        
+      >
+        <div class=""><p class="markdownify">
+  This is going to be my digital portfolio! Have always been into the &lsquo;How does this work?&rsquo; mindset. Took many things apart as a kid and some of those items made it back together and continued to work. Joined the Marine Corp right out of High School and Learned AC/DC theories, Electronics, HVAC, and Heavy Machinery Repair to sum it up. Finished my 4 year contract and got out. 6 months later realized I needed to go back in but did not like my options the Marines were given me and decided to join the Army. In the Unites States Army I was in school for more than a year Learning more Electronics. This time I was getting into Micro electronics, cable repair, Fiber optic connections and Fiber optic repair. A lot of schematics to look at and understand along the way. I got hurt in training which damaged my lower back(2009). Which got me medically retired from the Army(03/2010). Spent some time jumping from one bad job to the next and finally got my CDL and became a truck driver in 2014. I recently gave the over the road trucker lifestyle the boot. Decided to go back to school to feed my &lsquo;How does this work?&rsquo; Mindset. Currently attending Full Sail University out of Winter Park Florida enrolled in their IT/Cybersecurity degree program. As of right now I have learned a lot, but only the surface of many subjects. Now to find that diamond in the rough job where I can stay and grow my skills and learn more.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-briefcase"></i>
+          Experiences</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        
+      >
+        <div class="">
+<h4 style="text-decoration: underline">Full Time Student</h4>
+<p >
+  Oct 2023 - <em>Present</em> &middot;
+  
+  <a href="https://www.Fullsail.edu">Full Sail University</a>
+  
+</p>
+
+ 
+<h4 style="text-decoration: underline">OTR Professional Driver</h4>
+<p class="mb-0">
+  2014 - 2023 &middot;
+  
+  Multiple Companies
+  
+</p>
+
+
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Safely transported and ensured timely delivery of materials while achieving high rates of customer satisfaction</li>
+  
+</ul>
+ 
+<h4 style="text-decoration: underline">Patriot Missle System Repairer United States Army</h4>
+<p class="mb-0">
+  2008 - 2010 &middot;
+  
+  <a href="https://www.youtube.com/watch?v=KcRms9K3kIY">94S10</a>
+  
+</p>
+
+
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Performed Maintenance and quality control on the Patriot Missle System using complex schematics. Maintained 100% accountability for $500,000 worth of equipment</li>
+  
+</ul>
+ 
+<h4 style="text-decoration: underline">Engineer Equipment Mechanic Electrical High Voltage United States Marine Corps</h4>
+<p class="mb-0">
+  2003 - 2007 &middot;
+  
+  <a href="https://www.youtube.com/watch?v=DjgqZ-gLg4k">1142</a>
+  
+</p>
+
+
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Trained and Worked on Multiple sizes of Genrators. Maintained Generator Maintenance, Electrical grids for Marines in field exercises in the Unites States and Over seas while deployed.</li>
+  
+</ul>
+ 
+<h4 style="text-decoration: underline">Engineer Equipment Mechanic Heavy Machinery United States Marine Corps</h4>
+<p class="mb-0">
+  2003 - 2007 &middot;
+  
+  <a href="https://www.youtube.com/watch?v=JsVVgMeMxaQ">1341</a>
+  
+</p>
+
+
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Service, inspected, maintained, and repaired hig-pressure hydraulic systems and associated mechaincal and electrical equipment.</li>
+  
+</ul>
+ 
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-mortarboard"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">Cybersecurity Bachelors Degree</h4>
+<p >Graguation March 2026 &middot; Full Sail University</p>
+
+
+
+<h4 style="text-decoration: underline;">Information Technology Assoicates Degree</h4>
+<p >October 2023 - Febuary 2025 &middot; Full Saill University</p>
+
+
+
+<h4 style="text-decoration: underline;">High School Diploma</h4>
+<p >June 11, 2003 &middot; Fayettville Technical Community College</p>
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-kanban"></i>
+          Projects</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        
+      >
+        <div class="">
+<h4>
+  <a href="#">Project 1</a>
+</h4>
+<p class="markdownify indent-8">Description of the project</p>
+
+<h4>
+  <a href="#">Project 2</a>
+</h4>
+<p class="markdownify indent-8">Description of the project</p>
+
+<h4>
+  <a href="#">Project 3</a>
+</h4>
+<p class="markdownify indent-8">Description of the project</p>
+
+<h4>
+  <a href="#">Project 4</a>
+</h4>
+<p class="markdownify indent-8">Description of the project</p>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-list-check"></i>
+          Skills</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        id="skill-panel"
+        
+        
+      >
+        <div class=""><script>
+  let elem = document.querySelector("#skill-panel");
+  if (elem) {
+  let skillPanel = elem.previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+}
+</script>
+
+<code>Leadership</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="75% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Interpersonal Skills</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Basic Computer Skills</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Operating Systems</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="85% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Linux</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="75% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Windows</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="50% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>MacOS</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="50% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>iOS</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="50% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Android</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Microsoft Office</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="85% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Cybersecurity Research</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="75% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Intelligence Tools</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="50% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Critical Thinking</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Technical Solutions</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="60% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Complex Problem Solving</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Website Security</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="30% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Python</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="30% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>HTML/CSS</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="30% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Javascript</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="20% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>SQL</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="10% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>JSON</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="30% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-controller"></i>
+          Hobbies</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">--Walking my Dog Kona</li>
+  
+  <li class="list-unstyled mb-2">--Going to the gym with my son&#39;s</li>
+  
+  <li class="list-unstyled mb-2">--Working on my 1969 Ford Galaxie XL Sportsroof</li>
+  
+  <li class="list-unstyled mb-2">--Fixing Computers (Bringing them back to life)</li>
+  
+  <li class="list-unstyled mb-2">--Learning new ways to use Computers</li>
+  
+  <li class="list-unstyled mb-2">--Tearing things apart to figure out how they work</li>
+  
+  <li class="list-unstyled mb-2">--Jamming to Music</li>
+  
+</ul>
+</div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>
