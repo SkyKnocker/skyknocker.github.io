@@ -27,7 +27,8 @@ jobs:
           node-version: '20'
 
       - name: Install Tailwind CSS CLI
-        # Hugo looks for 'tailwindcss' via npx or PATH
+        # Hugo v0.128+ falls back to the PATH if npx fails
+        # We install the CLI globally so 'tailwindcss' is always found
         run: npm install -g tailwindcss @tailwindcss/cli
 
       - name: Setup Hugo
