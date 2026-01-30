@@ -1,4 +1,4 @@
-baseURL: "https://skyknocker.github.io/"
+baseURL: 'https://skyknocker.github.io/'
 languageCode: en-us
 build:
   writeStats: true
