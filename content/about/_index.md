@@ -1,6 +1,6 @@
 +++
 date = '2026-01-28T21:09:39-06:00'
-draft = false
+draft = true
 title = 'About Me'
 description = "Journey into Cyber Security"
 +++
@@ -21,4 +21,4 @@ I am currently a student diving deep into the world of **Cyber Security**. This 
 * **Interests:** Threat Hunting, OSINT, and DevSecOps.
 
 ---
->"The only truely secure system is one that is powered off, cast in a block ofconcret and sealed in a lead-lined room with armed guards - and even then I have my doubts." - *Gene Spafford*
+"The only truely secure system is one that is powered off, cast in a block ofconcret and sealed in a lead-lined room with armed guards - and even then I have my doubts." - *Gene Spafford*

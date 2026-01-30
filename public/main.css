@@ -202,20 +202,8 @@
   }
 }
 @layer utilities {
-  .visible {
-    visibility: visible !important;
-  }
-  .absolute {
-    position: absolute !important;
-  }
   .relative {
     position: relative !important;
-  }
-  .static {
-    position: static !important;
-  }
-  .sticky {
-    position: sticky !important;
   }
   .col-span-2 {
     grid-column: span 2 / span 2 !important;
@@ -225,9 +213,6 @@
   }
   .m-0 {
     margin: calc(var(--spacing) * 0) !important;
-  }
-  .m-1 {
-    margin: calc(var(--spacing) * 1) !important;
   }
   .m-auto {
     margin: auto !important;
@@ -714,9 +699,6 @@
   .grid {
     display: grid !important;
   }
-  .hidden {
-    display: none !important;
-  }
   .table {
     display: table !important;
   }
@@ -881,10 +863,6 @@
   .underline {
     text-decoration-line: underline !important;
   }
-  .outline {
-    outline-style: var(--tw-outline-style) !important;
-    outline-width: 1px !important;
-  }
   .drop-shadow-md {
     --tw-drop-shadow-size: drop-shadow(0 3px 3px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.12))) !important;
     --tw-drop-shadow: drop-shadow(var(--drop-shadow-md)) !important;
@@ -892,9 +870,6 @@
   }
   .invert {
     --tw-invert: invert(100%) !important;
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,) !important;
-  }
-  .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,) !important;
   }
   .transition {
@@ -1452,11 +1427,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1588,7 +1558,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
