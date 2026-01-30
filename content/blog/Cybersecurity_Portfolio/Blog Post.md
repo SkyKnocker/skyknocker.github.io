@@ -1,8 +1,10 @@
 ---
-title: "My Lab Setup"
-date: 2026-01-29
+title: My Lab Setup
+date: 2026-01-30
 draft: false
-tags: ["homelab", "cybersecurity"]
+tags:
+  - homelab
+  - cybersecurity
 ---
 This is my very first Blog to make sure the link I have works properly.
 testing
@@ -16,5 +18,6 @@ testing
 
 TESTING
 test one more time current time is now 1:00 am
-time commit seen online = 
+time commit seen online
+
 
