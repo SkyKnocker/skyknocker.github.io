@@ -69,6 +69,7 @@
       "bi-search",
       "bi-shield-check",
       "bi-stack-overflow",
+      "bi-telephone",
       "border",
       "border-b",
       "border-black",
@@ -184,8 +185,13 @@
       "w-full"
     ],
     "ids": [
+      "-daily-drivers--learning",
+      "-documentation--roadmaps",
+      "-technical-tools",
       "academic-achievements",
+      "accolades",
       "currently-studing-comptia-material",
+      "hello-world",
       "lab--hardware-gallery",
       "military-service--technical-training",
       "my-professional-credentials",

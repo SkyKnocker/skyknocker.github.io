@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>aafu theme</title>
-    <link>https://skyknocker.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on aafu theme</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://skyknocker.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cybersecurity Resources</title>
+      <link>http://localhost:1313/links/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/</guid>
+      <description>&lt;h1 id=&#34;hello-world&#34;&gt;HELLO WORLD&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-daily-drivers--learning&#34;&gt;🛡️ Daily Drivers &amp;amp; Learning&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://tryhackme.com&#34;&gt;TryHackMe&lt;/a&gt; - Gamified cybersecurity training.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.hackthebox.com&#34;&gt;Hack The Box&lt;/a&gt; - Advanced penetration testing labs.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://overthewire.org/wargames/&#34;&gt;OverTheWire&lt;/a&gt; - Great for learning Linux commands via wargames.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-technical-tools&#34;&gt;🔧 Technical Tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gchq.github.io/CyberChef/&#34;&gt;CyberChef&lt;/a&gt; - The &amp;ldquo;Cyber Swiss Army Knife&amp;rdquo; for encoding/decoding.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.shodan.io&#34;&gt;Shodan&lt;/a&gt; - Search engine for Internet-connected devices.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gtfobins.github.io&#34;&gt;GTFOBins&lt;/a&gt; - Curated list of Unix binaries that can be used to bypass local security.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-documentation--roadmaps&#34;&gt;📚 Documentation &amp;amp; Roadmaps&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://owasp.org/www-project-top-ten/&#34;&gt;OWASP Top 10&lt;/a&gt; - The standard awareness document for web app security.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.nist.gov/cyberframework&#34;&gt;NIST Cybersecurity Framework&lt;/a&gt; - Industry standards for security.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>About to Finish my Degree</title>
-      <link>https://skyknocker.github.io/blog/post_3/</link>
+      <link>http://localhost:1313/blog/post_3/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://skyknocker.github.io/blog/post_3/</guid>
+      <guid>http://localhost:1313/blog/post_3/</guid>
       <description>&lt;h2 id=&#34;thoughts-on-being-a-student&#34;&gt;Thoughts on being a Student&lt;/h2&gt;&#xA;&lt;p&gt;It&amp;rsquo;s been a journey going to school at Full Sail University as a online student. Having to force myself sometimes to stop what I am doing and sit down and do my homework, or read material.&lt;/p&gt;</description>
     </item>
   </channel>
