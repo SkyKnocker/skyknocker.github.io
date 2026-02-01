@@ -7,6 +7,8 @@
       "code",
       "div",
       "em",
+      "figcaption",
+      "figure",
       "footer",
       "h1",
       "h2",
@@ -194,19 +196,26 @@
       "accolades",
       "currently-studing-comptia-material",
       "hello-world",
+      "key-features-implemented",
       "lab--hardware-gallery",
       "linkedin-learning-certifications",
       "military-service--technical-training",
       "my-professional-credentials",
       "panel-item-0",
       "panel-item-1",
+      "panel-item-2",
+      "panel-item-3",
+      "panel-item-4",
       "search",
       "skill-panel",
       "skill-percent",
+      "the-build-process",
       "the-desk",
+      "the-tech-stack",
       "thoughts-on-being-a-student",
       "welcome-to-list-of-certs-from-linkedin",
-      "welcome-to-my-visual-lab-notebook"
+      "welcome-to-my-visual-lab-notebook",
+      "why-this-matters"
     ]
   }
 }

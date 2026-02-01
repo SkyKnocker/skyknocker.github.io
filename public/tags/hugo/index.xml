@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cybersecurity Insights &amp; Updates on Cybersecurity Portfolio</title>
-    <link>https://skyknocker.github.io/blog/</link>
-    <description>Recent content in Cybersecurity Insights &amp; Updates on Cybersecurity Portfolio</description>
+    <title>Hugo on Cybersecurity Portfolio</title>
+    <link>https://skyknocker.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Cybersecurity Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://skyknocker.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skyknocker.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🏗️ Building a Secure &amp; Automated Portfolio</title>
       <link>https://skyknocker.github.io/blog/building--the-portfolio/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://skyknocker.github.io/blog/building--the-portfolio/</guid>
       <description>&lt;h2 id=&#34;the-tech-stack&#34;&gt;The Tech Stack&lt;/h2&gt;&#xA;&lt;p&gt;To host my professional certifications and projects, I chose &lt;strong&gt;Hugo&lt;/strong&gt;, a static site generator known for speed and security. By using a static framework, I&amp;rsquo;ve minimized the attack surface of my portfolio while ensuring lightning-fast load times.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features-implemented&#34;&gt;Key Features Implemented:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automated Certification Gallery&lt;/strong&gt;: I developed a custom Hugo shortcode to dynamically pull 24+ LinkedIn Learning PDFs from my storage directory, automatically formatting the titles for a clean user experience.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Infrastructure as Code&lt;/strong&gt;: The site is version-controlled via &lt;strong&gt;GitHub&lt;/strong&gt; and deployed using &lt;strong&gt;GitHub Actions&lt;/strong&gt;, demonstrating a foundational understanding of CI/CD pipelines.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Content Decoupling&lt;/strong&gt;: I customized the Aafu theme by overriding internal templates in the root directory, ensuring my content remains portable and secure during theme updates.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;why-this-matters&#34;&gt;Why This Matters&lt;/h2&gt;&#xA;&lt;p&gt;In Cybersecurity, documentation and clear communication are just as vital as technical skill. This site serves as a living document of my journey at Full Sail University and my commitment to continuous professional development.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>🚀 Click Here: About to Finish my Degree</title>
-      <link>https://skyknocker.github.io/blog/first-post/</link>
-      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://skyknocker.github.io/blog/first-post/</guid>
-      <description>&lt;h2 id=&#34;thoughts-on-being-a-student&#34;&gt;Thoughts on being a Student&lt;/h2&gt;&#xA;&lt;p&gt;It&amp;rsquo;s been a journey going to school at Full Sail University as a online student. Having to force myself sometimes to stop what I am doing and sit down and do my homework, or read material.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
