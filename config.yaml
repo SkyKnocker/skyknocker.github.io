@@ -7,8 +7,8 @@ title: aafu theme
 theme: "aafu"
 
 params:
-  author: Darshan Baral
-  description: Website title
+  author: Christopher Stevens
+  description: Cybersecurity & IT Portfolio
   copyright: powered by [hugo](https://gohugo.io/)
   theme:
     mainTheme: dark
@@ -23,6 +23,7 @@ params:
     - item: skills
       panel_id: skill-panel
     - item: hobbies
+  keywords: "Cybersecurity, IT Portfolio, Veteran, Full Sail University, Network Security, Penetration Testing"
 markup:
   goldmark:
     renderer:
