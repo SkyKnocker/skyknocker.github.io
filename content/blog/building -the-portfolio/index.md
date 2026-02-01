@@ -24,5 +24,5 @@ Here is a look at my Hugo directory structure and the terminal during a successf
 
 <figure>
   <img src="behindthescenes.png" alt="Terminal Build">
-  <figcaption align="center"><i>Fig 1: Behind the scenes in VS Code.</i></figcaption>
+  <figcaption align="center"><i>Fig 1: Behind the scenes in VS Code. The back Office.</i></figcaption>
 </figure>
