@@ -20,7 +20,7 @@ draft: false
 * [OWASP Top 10](https://owasp.org/www-project-top-ten/) - The standard awareness document for web app security.
 * [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) - Industry standards for security.
 
-## Job Boards
+## -----  Job Boards  -----
 * [LinkedIn Jobs](https://www.linkedin.com/jobs/) - Easy way to search for professional jobs and apply right on LinkedIn.
 * [Indeed - Cybersecurity Roles](https://www.indeed.com/q-Cyber-Security-jobs.html?vjk=90c4fd65e94e6d07) - Preset link to Cybersecurity jobs on Indeed.
 * [ClearanceJobs](https://www.clearancejobs.com/) - A place for Veterans like me to look for gainful employment.

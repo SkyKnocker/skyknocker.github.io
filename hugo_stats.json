@@ -185,6 +185,7 @@
       "w-full"
     ],
     "ids": [
+      "--job-boards--",
       "-daily-drivers--learning",
       "-documentation--roadmaps",
       "-technical-tools",
@@ -192,7 +193,6 @@
       "accolades",
       "currently-studing-comptia-material",
       "hello-world",
-      "job-boards",
       "lab--hardware-gallery",
       "military-service--technical-training",
       "my-professional-credentials",
