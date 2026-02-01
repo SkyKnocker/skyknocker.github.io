@@ -21,6 +21,7 @@ In Cybersecurity, documentation and clear communication are just as vital as tec
 ## The Build Process
 Here is a look at my Hugo directory structure and the terminal during a successful build:
 
+[Click here to learn more about Hugo](https://gohugo.io/)
 
 <figure>
   <img src="behindthescenes.png" alt="Terminal Build">
