@@ -17,9 +17,9 @@
     </item>
     <item>
       <title>🏗️ Building a Secure &amp; Automated Portfolio</title>
-      <link>https://skyknocker.github.io/blog/building--the-portfolio/</link>
+      <link>https://skyknocker.github.io/blog/building-portfolio/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://skyknocker.github.io/blog/building--the-portfolio/</guid>
+      <guid>https://skyknocker.github.io/blog/building-portfolio/</guid>
       <description>&lt;h2 id=&#34;the-tech-stack&#34;&gt;The Tech Stack&lt;/h2&gt;&#xA;&lt;p&gt;To host my professional certifications and projects, I chose &lt;strong&gt;Hugo&lt;/strong&gt;, a static site generator known for speed and security. By using a static framework, I&amp;rsquo;ve minimized the attack surface of my portfolio while ensuring lightning-fast load times.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features-implemented&#34;&gt;Key Features Implemented:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automated Certification Gallery&lt;/strong&gt;: I developed a custom Hugo shortcode to dynamically pull 24+ LinkedIn Learning PDFs from my storage directory, automatically formatting the titles for a clean user experience.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Infrastructure as Code&lt;/strong&gt;: The site is version-controlled via &lt;strong&gt;GitHub&lt;/strong&gt; and deployed using &lt;strong&gt;GitHub Actions&lt;/strong&gt;, demonstrating a foundational understanding of CI/CD pipelines.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Content Decoupling&lt;/strong&gt;: I customized the Aafu theme by overriding internal templates in the root directory, ensuring my content remains portable and secure during theme updates.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;why-this-matters&#34;&gt;Why This Matters&lt;/h2&gt;&#xA;&lt;p&gt;In Cybersecurity, documentation and clear communication are just as vital as technical skill. This site serves as a living document of my journey at Full Sail University and my commitment to continuous professional development.&lt;/p&gt;</description>
     </item>
     <item>
