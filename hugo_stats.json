@@ -149,6 +149,7 @@
       "my-2",
       "my-6",
       "nav",
+      "nav-menu",
       "nav-menu-item",
       "overflow-hidden",
       "p-2",
@@ -194,6 +195,7 @@
       "currently-studing-comptia-material",
       "hello-world",
       "lab--hardware-gallery",
+      "linkedin-learning-certifications",
       "military-service--technical-training",
       "my-professional-credentials",
       "panel-item-0",
@@ -201,7 +203,10 @@
       "search",
       "skill-panel",
       "skill-percent",
-      "thoughts-on-being-a-student"
+      "the-desk",
+      "thoughts-on-being-a-student",
+      "welcome-to-list-of-certs-from-linkedin",
+      "welcome-to-my-visual-lab-notebook"
     ]
   }
 }

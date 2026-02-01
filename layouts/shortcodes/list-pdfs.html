@@ -1,0 +1,13 @@
+<ul>
+{{ $path := .Get "path" }}
+{{ $files := readDir (print "static/" $path) }}
+{{ range $files }}
+  {{ if (findRE ".pdf$" .Name) }}
+    <li style="margin-bottom: 10px;">
+      <a href="{{ (print "/" $path "/" .Name) | relURL }}" target="_blank" style="text-decoration: none;">
+        📜 {{ replace (strings.TrimSuffix ".pdf" .Name) "CertificateOfCompletion_" "" }}
+      </a>
+    </li>
+  {{ end }}
+{{ end }}
+</ul>
