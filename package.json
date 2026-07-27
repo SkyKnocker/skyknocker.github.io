@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "name": "cyberportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyKnocker/skyknocker.github.io.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SkyKnocker/skyknocker.github.io/issues"
+  },
+  "homepage": "https://github.com/SkyKnocker/skyknocker.github.io#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.20"
+  }
+}

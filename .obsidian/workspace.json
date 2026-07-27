@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8e71c617fd3bfea8",
+        "id": "bd538e706e3c415b",
         "type": "tabs",
         "children": [
           {
-            "id": "070b225c4e97bfed",
+            "id": "b98c09c34e8804ed",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -178,9 +176,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "070b225c4e97bfed",
+  "active": "b98c09c34e8804ed",
   "lastOpenFiles": [
     "static/ChrisStevensResume2026V4.pdf",
+    "static/og-image.png",
+    "static/ChrisStevensResume2026.pdf",
+    "static/images/HomeLabRouter_&_Switches.jpg",
+    "static/images/Hazardous_Waste02.jpg",
+    "static/images/Hazard_Com02.jpg",
+    "static/images/Ground_Safety02.jpg",
+    "static/images/DeskUpdated.jpg",
+    "static/images/Dell_T3610.jpg",
+    "static/images/ComingSoon.png",
+    "static/images/AssociatesDegree02.jpg",
+    "static/images/69130418383__6A9CA20F-4CF8-4B2C-B3FF-93DD43E5C2E2.jpeg",
     "public/ChrisStevensResume2026V4.pdf",
     "public/main.min.49252aa5a025609a103ca4cfd67305a0d7caefc720d9d307023b0c83b90f0f3c.css"
   ]
